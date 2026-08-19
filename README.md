@@ -21,7 +21,7 @@ A comprehensive web application security assessment was performed on **Damn Vuln
 - **Payload:** `192.168.187.129; whoami`
 - **Impact:** System privilege disclosure (`uid=33(www-data)`) and potential remote code execution (RCE).
 - **Proof of Concept:**
-  ![Command Execution](Screen_Shots/Command Execution.png)
+  ![Command Execution](Screen_Shots/Command_Execution.png)
 - **Remediation:** Avoid calling OS shell execution functions (e.g., `system()`, `exec()`). Implement strict input validation or use secure APIs.
 
 ---
@@ -32,7 +32,7 @@ A comprehensive web application security assessment was performed on **Damn Vuln
 - **Payload:** `' OR '1'='1`
 - **Impact:** Complete exposure of database content, including user credentials and sensitive records.
 - **Proof of Concept:**
-  ![SQL Injection](Screen_Shots/SQL Injection.png)
+  ![SQL Injection](Screen_Shots/SQL_Injection.png)
 - **Remediation:** Implement Prepared Statements (Parameterized Queries) or Object-Relational Mapping (ORM) to separate data from execution logic.
 
 ---
