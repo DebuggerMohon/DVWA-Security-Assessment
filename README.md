@@ -21,7 +21,7 @@ A comprehensive web application security assessment was performed on **Damn Vuln
 - **Payload:** `192.168.187.129; whoami`
 - **Impact:** System privilege disclosure (`uid=33(www-data)`) and potential remote code execution (RCE).
 - **Proof of Concept:**
-  ![Command Execution](Screen_Shots/injection.png)
+  ![Command Execution](Screen_Shots/Command Execution.png)
 - **Remediation:** Avoid calling OS shell execution functions (e.g., `system()`, `exec()`). Implement strict input validation or use secure APIs.
 
 ---
@@ -32,7 +32,7 @@ A comprehensive web application security assessment was performed on **Damn Vuln
 - **Payload:** `' OR '1'='1`
 - **Impact:** Complete exposure of database content, including user credentials and sensitive records.
 - **Proof of Concept:**
-  ![SQL Injection](Screen_Shots/sqli.png)
+  ![SQL Injection](Screen_Shots/SQL Injection.png)
 - **Remediation:** Implement Prepared Statements (Parameterized Queries) or Object-Relational Mapping (ORM) to separate data from execution logic.
 
 ---
@@ -43,7 +43,7 @@ A comprehensive web application security assessment was performed on **Damn Vuln
 - **Payload:** `<script>alert('XSS-Vulnerability')</script>`
 - **Impact:** Session hijacking, cookie theft, and malicious client-side script execution.
 - **Proof of Concept:**
-  ![Cross-Site Scripting](Screen_Shots/xss.png)
+  ![Cross-Site Scripting](Screen_Shots/XSS.png)
 - **Remediation:** Apply contextual HTML/JavaScript entity encoding before outputting user input to the DOM, and implement a strong Content Security Policy (CSP).
 
 ---
