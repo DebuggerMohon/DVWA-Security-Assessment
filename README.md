@@ -1,11 +1,11 @@
-# 🛡️ DVWA Vulnerability Assessment & Security Assessment Report
+# DVWA Vulnerability Assessment & Security Assessment Report
 
-## 📌 Executive Summary
+## Executive Summary
 A comprehensive web application security assessment was performed on **Damn Vulnerable Web Application (DVWA)** in a controlled lab environment. The goal was to identify, exploit, and provide technical remediation for critical security flaws aligned with the **OWASP Top 10** vulnerabilities.
 
 ---
 
-## 🛠️ Tools & Methodology
+## Tools & Methodology
 - **Target Application:** DVWA (Security Level: Low)
 - **Scanners:** Nmap, Nikto
 - **Interception Proxy:** Burp Suite
@@ -13,7 +13,7 @@ A comprehensive web application security assessment was performed on **Damn Vuln
 
 ---
 
-## 🔍 Identified Vulnerabilities & Proof of Concept (PoC)
+## Identified Vulnerabilities & Proof of Concept (PoC)
 
 ### 1. Command Execution (OS Command Injection)
 - **Severity:** High (CVSS v3.1: 9.8)
@@ -48,7 +48,7 @@ A comprehensive web application security assessment was performed on **Damn Vuln
 
 ---
 
-## 💡 Recommendations & Best Practices
+## Recommendations & Best Practices
 1. **Context-Aware Input Validation:** Sanitize and validate all user inputs on the server side using allowlists.
 2. **Parameterized Queries:** Use parameterized SQL interface across all database interactions to prevent SQLi.
 3. **Output Encoding:** Encode output dynamically based on the rendering context (HTML, JS, CSS) to prevent XSS.
